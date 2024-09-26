@@ -3,7 +3,7 @@
 
 @protocol SDKQueueService_NSURLConnectionRequestDelegate;
 
-@interface QueueService_NSURLConnectionRequest : NSObject<NSURLConnectionDelegate, NSURLConnectionDataDelegate>
+@interface SDKQueueService_NSURLConnectionRequest : NSObject<NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 
 - (NSString *)uniqueIdentifier;
 
@@ -16,5 +16,5 @@
 @end
 
 @protocol SDKQueueService_NSURLConnectionRequestDelegate <NSObject>
-- (void)requestDidComplete:(QueueService_NSURLConnectionRequest *)request;
+- (void)requestDidComplete:(SDKQueueService_NSURLConnectionRequest *)request;
 @end
